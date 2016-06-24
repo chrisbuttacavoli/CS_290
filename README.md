@@ -1,2 +1,2 @@
 # CS_290
-The readme file
+Completed Assignments 1 & 2
