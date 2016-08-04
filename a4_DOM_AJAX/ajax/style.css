@@ -1,0 +1,57 @@
+/*
+	Table styles
+*/
+
+table, th, td {
+	border: 1px solid black;
+}
+
+/* specific column css */
+tbody tr td:nth-child(1) {
+	font-style: italic;
+}
+tbody tr td:nth-child(2) {
+	color: red;
+}
+tbody tr td:nth-child(4) {
+	color: blue;
+}
+/* alternate row color */
+tbody tr:nth-of-type(2n-1) {
+	background: green;
+}
+tbody tr:nth-of-type(2n) {
+	background: cyan;
+}
+
+
+/*
+	DIV styles
+*/
+.outer-content {
+   background: pink;
+   margin-top: 20px;
+   padding: 15px 0;
+   width: 75%;
+}
+
+.inner-content {
+   background: cyan;
+   margin: 0 auto;
+   text-align: center;
+   width: 75%;
+}
+
+
+/*
+	Form Styles
+*/
+fieldset {
+   padding: 10px 10px;
+}
+
+.box {
+   border: 1px solid grey;
+   margin: 10px 0;
+   padding: 15px 6px;
+}

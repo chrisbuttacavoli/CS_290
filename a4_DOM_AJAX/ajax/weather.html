@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>AJAX and WEB APIs</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="./weather.js"></script>
+</head>
+<body>
+
+	<form action="" method="POST">
+		<fieldset>
+			<legend>Check Weather</legend>
+			<p>Choose either City or ZIP</p>
+			<div class="box">
+				<label>Enter (City, State):</label>
+				<input type="text" name="text_input" id="city" />
+			</div>
+			<div class="box">
+				<label>Enter ZIP:</label>
+				<input type="number" name="numerical_input" id="zip" />
+			</div>
+			<input type="submit" id="submit" name="submit" value="Submit" />
+		</fieldset>
+	</form>
+	
+	<div id="infoList" style="display:none">
+		<p>Weather for <span id="displayCity"></span></p>
+		<ul>
+			<li id="temp"></li>
+			<li id="hum"></li>
+			<li id="press"></li>
+		</ul>
+	</div>
+	
+</body>
+
+</html>

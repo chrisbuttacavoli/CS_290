@@ -1,0 +1,38 @@
+<!--rendering js object here reference: http://stackoverflow.com/questions/18903357/express-doesnt-pass-object-to-the-view-->
+
+<h1>Editing {{this.name}}</h1>
+<form action="http://52.41.86.148:3001/" method="post">
+   <fieldset>
+      <legend>Edit exercise {{this.name}}</legend>
+	  <input type="hidden" id="id" value="{{this.id}}" />
+      <div class="box">
+         <label>Name:</label>
+         <input type="text" name="name" id="name" value="{{this.name}}" />
+      </div>
+      <div>
+         <label>Reps:</label>
+         <input type="number" name="reps" id="reps" value="{{this.reps}}"/>
+      </div>
+      <div>
+         <label>Weight:</label>
+         <input type="number" name="weight" id="weight" value="{{this.weight}}"/>
+      </div>
+      <div>
+         <label>Date:</label>
+         <input type="date" name="date" id="date" value="{{this.date}}"/>
+      </div>
+      <div>
+         <label>Lbs:</label>
+         <input type="checkbox" name="lbs" id="lbs" data-checked="{{this.lbs}}" />
+      </div>
+      <div>
+         <input id="submit" type="submit" name="submit" value="Submit" />
+      </div>
+   </fieldset>
+</form>
+
+<p id="message"></p>
+
+<a href="http://52.41.86.148:3001/">Go Back</a>
+
+<script src="/javascripts/edit-scripts.js"></script>
